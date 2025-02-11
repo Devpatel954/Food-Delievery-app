@@ -1,0 +1,138 @@
+
+.footer {
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top: 100px;
+}
+
+
+
+.footercontent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+
+.footer-cont-left,
+.footer-content-right,
+.footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+
+.footer-cont-left li,
+.footer-content-right li,
+.footer-content-center li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-cont-left li:hover,
+.footer-content-right li:hover,
+.footer-content-center li:hover {
+    color: #ff6347; 
+}
+
+
+.footer-content-right h2,
+.footer-content-center h2 {
+    color: black;
+}
+
+
+.footer-icons img {
+    width: 40px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+    background-color: gray;
+    border: none;
+}
+
+
+.copyright {
+    font-size: 14px;
+    color: black;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .footercontent {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footercontent {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-cont-left,
+    .footer-content-right,
+    .footer-content-center {
+        align-items: center;
+    }
+
+    .footer-icons img {
+        width: 35px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 5vw;
+    }
+
+    .footercontent {
+        gap: 20px;
+    }
+
+    .footer-icons img {
+        width: 30px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
+@media(max-width:750px){
+    .footercontent{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+
+    }
+    .copyright{
+        text-align: center;
+    }
+}

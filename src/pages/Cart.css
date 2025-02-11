@@ -1,0 +1,128 @@
+.cart {
+    width: 90%;
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-items {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  .cart-items-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-items img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .cross {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .cross:hover {
+    color: darkred;
+  }
+  
+  .cart-bottom {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .cart-total {
+    padding: 20px;
+  }
+  
+  .cart-total h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .divtotal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .divtotal p {
+    margin: 0;
+  }
+  
+  .divtotal b {
+    font-size: 1.2rem;
+    color: #222;
+  }
+  
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e65c00;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .cart-items-title,
+    .cart-items-item {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  
+    .cart-items-title p:nth-child(2),
+    .cart-items-title p:nth-child(6),
+    .cart-items-item p:nth-child(2),
+    .cart-items-item p:nth-child(6) {
+      display: none;
+    }
+  }
+  

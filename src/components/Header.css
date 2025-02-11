@@ -1,7 +1,7 @@
 .header{
     height: 34vw;
     margin: 34px auto;
-    background: url('./header_img.png') no-repeat ;
+    background: url('/header_img.png') no-repeat ;
     background-size: contain;
     position: relative;
 }
@@ -41,20 +41,21 @@
 
 
 @media(max-width:1050px){
-  
+ 
     .header-contents{
         max-width:45%
     }
 }
+
 @media(max-width:750px){
    
     .header-contents{
         max-width:65%;
     }
-    .header-content p{
+    .header-contents p{
         display: none;
     }
     .header-contents button{
-        padding: 2vw 4vw;
+        padding: 1vw 2vw;
     }
 }

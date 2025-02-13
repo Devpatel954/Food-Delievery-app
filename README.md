@@ -15,7 +15,7 @@ Tomato is a full-stack food delivery web application designed to provide a seaml
 - **Frontend**: ReactJS, JavaScript
 - **Backend**: NodeJS, Express.js
 - **Database**: MongoDB
-- **Styling**: CSS, TailwindCSS (if applicable)
+- **Styling**: CSS, Tailwind
 
 ## 📌 Installation & Setup
 ### Prerequisites
@@ -28,7 +28,7 @@ Ensure you have the following installed:
 - Optimized API calls and database queries for faster response times.
 
 ## 🔮 Future Enhancements
-- 💳 **Payment Integration**: Add Stripe or PayPal for secure transactions.
+- 💳 **Payment Integration**: To add Stripe or PayPal for secure transactions.
 - 📊 **Admin Dashboard**: Manage restaurants, orders, and users.
 - 🔄 **Real-time Updates**: WebSocket integration for live order tracking.
 
